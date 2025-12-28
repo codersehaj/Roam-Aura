@@ -1,0 +1,326 @@
+/* --------- GLOBAL STYLING ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+header h2 {
+  font-size: 42px;          /* Make title big */
+  font-weight: 800;         /* Make it bold */
+  letter-spacing: 2px;      /* Stylish spacing */
+  color: #ffffff;           /* Keep it clean white */
+  text-shadow: 0 0 10px rgba(255, 221, 87, 0.6);  /* Soft golden glow */
+  margin-bottom: 10px;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+/* ---------- NAVBAR STYLING (MAROON + PURPLE + GREEN PALETTE) ---------- */
+
+header {
+  background: linear-gradient(
+      135deg,
+      rgba(50, 10, 10, 0.75),   /* deep maroon */
+      rgba(30, 5, 40, 0.75),    /* royal purple */
+      rgba(5, 40, 25, 0.65)     /* dark forest green */
+  );
+  padding: 25px 0;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+}
+
+header h2 {
+  color: #e8f5e9; /* soft mint white text */
+  font-size: 2.4em;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.65);
+}
+
+/* NAV LINKS CONTAINER */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+/* NAV BOX BUTTONS */
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #d8ffe1; /* pale mint green */
+  padding: 10px 18px;
+  border-radius: 12px;
+
+  /* maroon-purple blend border */
+  border: 2px solid rgba(180, 90, 120, 0.7); 
+
+  /* subtle button background */
+  background: rgba(255, 255, 255, 0.08);
+
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  transition: all 0.35s ease;
+  backdrop-filter: blur(3px);
+}
+
+/* HOVER EFFECT */
+nav a:hover {
+  background: linear-gradient(
+      135deg,
+      #9c2741,   /* bright maroon */
+      #65219e,   /* pop purple */
+      #3c8d5b    /* emerald green */
+  );
+  color: #fff;
+  transform: translateY(-3px) scale(1.08);
+
+  box-shadow: 
+      0 0 12px rgba(156, 39, 65, 0.7),
+      0 0 12px rgba(60, 141, 91, 0.6);
+}
+
+/* -------- HERO SECTION ------- */
+.hero {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 {
+  font-size: 50px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
+  border-radius: 15px;
+}
+
+/* -------- CONTENT SECTION ------- */
+.section {
+  padding: 40px;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  color: #ffdd57;
+  font-size: 32px;
+}
+
+.section p {
+  width: 80%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* -------- FOOTER ------- */
+footer {
+  background: linear-gradient(
+      135deg,
+      rgba(50, 10, 10, 0.75),   /* deep maroon */
+      rgba(30, 5, 40, 0.75),    /* royal purple */
+      rgba(5, 40, 25, 0.65)     /* dark forest green */
+  );
+  color: #d8ffe1;
+  padding: 25px 0;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+}
+/* -------- COLLAGE SLIDER -------- */
+.collage-slider {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* All images stacked on top of each other */
+.collage-slider .slide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: fadeSlide 15s infinite;
+}
+
+/* Animation timing for each image */
+.img1 { animation-delay: 0s; }
+.img2 { animation-delay: 5s; }
+.img3 { animation-delay: 10s; }
+
+/* Fade animation */
+@keyframes fadeSlide {
+  0% { opacity: 0; scale:1.2; }
+  10% { opacity: 1; scale:1; }
+  30% { opacity: 1; scale:1; }
+  40% { opacity: 0; scale:1.2; }
+  100% { opacity: 0; }
+}
+
+/* TEXT OVERLAY */
+.overlay-title {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.overlay-title h1 {
+  font-size: 50px;
+  padding: 15px 40px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 20px;
+  color: #ffdd57;
+}
+/* ---------- SIDE SCROLL COLLAGE ---------- */
+
+.scroll-collage {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  background: black;
+}
+
+.scroll-track {
+  display: flex;
+  width: calc(300px * 6); /* (width * number of images) */
+  animation: scrollLeft 20s linear infinite;
+}
+
+.scroll-track img {
+  width: 300px;
+  height: 100%;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* Infinite scroll animation */
+@keyframes scrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+  height: 80vh;
+  background: 
+    linear-gradient(
+      rgba(0, 0, 50, 0.5), 
+      rgba(0, 0, 30, 0.7)
+    ), 
+    url('https://images.unsplash.com/photo-1507812984078-917a274065be?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 0 20px;
+  overflow: hidden;
+  color: #fff;
+}
+
+/* Fade and slide in animation */
+.hero-content {
+  max-width: 700px;
+  position: relative;
+  z-index: 2;
+  animation: fadeSlideUp 1s ease-out forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.hero-content h1 {
+  font-size: 3.8em;
+  font-weight: 900;
+  margin-bottom: 15px;
+  letter-spacing: 1.5px;
+  line-height: 1.1;
+  color: #a8d5ba; /* soft mint green */
+  text-shadow: 2px 2px 8px rgba(3, 50, 20, 0.9);
+}
+
+.hero-content p {
+  font-size: 1.4em;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #c3e2cc; /* lighter mint */
+  text-shadow: 1px 1px 4px rgba(3, 30, 20, 0.7);
+}
+
+/* Stylish hero button */
+.hero-btn {
+    display: inline-block;
+  padding: 14px 36px;
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #0b3d1e; /* dark forest green */
+  background: linear-gradient(135deg, #a8d5ba 0%, #7cbf94 100%);
+  border-radius: 30px;
+  box-shadow: 0 6px 12px rgba(168, 213, 186, 0.6);
+  text-decoration: none;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.06em;
+  user-select: none;
+
+}
+
+.hero-btn:hover {
+  background: linear-gradient(
+      135deg,
+      #9c2741,   /* bright maroon */
+      #65219e,   /* pop purple */
+      #3c8d5b    /* emerald green */
+  );
+  color: #fff;
+  transform: translateY(-3px) scale(1.08);
+
+  box-shadow: 
+      0 0 12px rgba(156, 39, 65, 0.7),
+      0 0 12px rgba(60, 141, 91, 0.6);
+}
+
+/* Animation Keyframes */
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- INTRO SECTION ---------- */
+.intro {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.intro h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: rgba(180, 90, 120, 0.7);
+}
+
+.intro p {
+  font-size: 1.2em;
+  color: rgba(180, 90, 120, 0.7);
+  line-height: 1.6;
+}

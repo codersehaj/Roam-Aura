@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>7-Day France Trip Plan</title>
+  <link rel="icon" href="image1.png" type="image/png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #f0f4ff, #ffe6e6);
+      margin: 0;
+      padding: 0 20px 50px;
+      color: #333;
+    }
+    .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+}
+
+.navbar a {
+    padding: 10px 20px;
+    background: #eee;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background: #ffb74d;
+    color: #fff;
+}
+
+    header {
+      text-align: center;
+      padding: 30px 20px 10px;
+      color: #2c3e50;
+      letter-spacing: 2px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 2.8rem;
+      color: #2a52be; /* french blue */
+    }
+
+    header p {
+      margin-top: 5px;
+      font-weight: 400;
+      font-size: 1.1rem;
+      color: #d64933; /* warm red */
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .day-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 0.7s forwards;
+      transition: transform 0.3s ease;
+    }
+    .day-card:hover {
+      transform: translateY(0) scale(1.03);
+      box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+    }
+
+    /* Animation delay for each card */
+    .day-card:nth-child(1) { animation-delay: 0.1s; }
+    .day-card:nth-child(2) { animation-delay: 0.3s; }
+    .day-card:nth-child(3) { animation-delay: 0.5s; }
+    .day-card:nth-child(4) { animation-delay: 0.7s; }
+    .day-card:nth-child(5) { animation-delay: 0.9s; }
+    .day-card:nth-child(6) { animation-delay: 1.1s; }
+    .day-card:nth-child(7) { animation-delay: 1.3s; }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .day-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 5px solid #2a52be;
+      transition: transform 0.4s ease;
+    }
+
+    .day-card:hover .day-image {
+      transform: scale(1.05);
+    }
+
+    .day-content {
+      padding: 20px;
+    }
+
+    .day-content h2 {
+      margin: 0 0 10px;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #2a52be;
+    }
+
+    .day-content p {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #777;
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+
+    @media (max-width: 480px) {
+      .day-image {
+        height: 150px;
+      }
+    }
+    .info-row {
+  display: flex;
+  gap: 15px;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info-box {
+  background: #ffffff;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-weight: 600;
+}
+  </style>
+</head>
+<body>
+    <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="india.html">India</a>
+    <a href="switzerland.html">Switzerland</a>
+    <a href="dubai.html">Dubai</a>
+    <a href="abudhabi.html">Abu Dhabi</a>
+     <a href="america.html">America</a>
+</div>
+
+  <header>
+    <h1>7-Day France Trip Plan</h1>
+    <p>Explore the best of France with this amazing itinerary!</p>
+  </header>
+
+  <div class="container">
+    <!-- Day 1 -->
+    <div class="day-card">
+      <img class="day-image" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80" alt="Eiffel Tower, Paris" />
+      <div class="day-content">
+        <h2>Day 1: Arrival in Paris & Eiffel Tower</h2>
+        <p>Arrive in Paris and settle in your hotel. Spend your afternoon visiting the iconic Eiffel Tower and enjoy a relaxing Seine River cruise in the evening.</p>
+      </div>
+    </div>
+
+    <!-- Day 2 -->
+    <div class="day-card">
+      <img class="day-image" src="https://images.hindustantimes.com/rf/image_size_960x540/HT/p2/2019/04/24/Pictures/_7f7499a4-6677-11e9-9706-c5428a3382f6.JPG" alt="Louvre Museum" />
+      <div class="day-content">
+        <h2>Day 2: Louvre Museum & Historic Paris</h2>
+        <p>Explore the Louvre Museum in the morning, then stroll through historic neighborhoods like Le Marais and visit Notre-Dame Cathedral.</p>
+      </div>
+    </div>
+
+    <!-- Day 3 -->
+    <div class="day-card">
+      <img class="day-image" src="https://www.travelandleisure.com/thmb/sR2kS_tl_yz4bxFkxDWyaVv6lmw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/versailles-palace-courtyard-SECRET1216-911d9538288141a686474b1ce08a2e1a.jpg" alt="Versailles Palace" />
+      <div class="day-content">
+        <h2>Day 3: Day Trip to Versailles</h2>
+        <p>Take a day trip to the magnificent Palace of Versailles. Explore the gardens and the opulent rooms of this royal estate.</p>
+      </div>
+    </div>
+
+    <!-- Day 4 -->
+    <div class="day-card">
+      <img class="day-image" src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/74/a9/10.jpg" alt="Loire Valley Castle" />
+      <div class="day-content">
+        <h2>Day 4: Loire Valley Castles</h2>
+        <p>Travel to the Loire Valley and visit some of the stunning castles like Château de Chambord and Château de Chenonceau.</p>
+      </div>
+    </div>
+
+    <!-- Day 5 -->
+    <div class="day-card">
+      <img class="day-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTobM7hMDusYN4Js-lB5-vCnyfHuhCyznXSw&s" alt="Bordeaux Vineyards" />
+      <div class="day-content">
+        <h2>Day 5: Bordeaux Vineyards</h2>
+        <p>Explore the vineyards of Bordeaux, enjoy wine tastings, and savor delicious local cuisine in this beautiful region.</p>
+      </div>
+    </div>
+
+    <!-- Day 6 -->
+    <div class="day-card">
+      <img class="day-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3ZoAiLOZqcWr89Ti7TpgHQwojsBAeD4rpKw&s" alt="Nice Coastline" />
+      <div class="day-content">
+        <h2>Day 6: French Riviera - Nice</h2>
+        <p>Relax on the beaches of Nice and stroll along the Promenade des Anglais. Experience the Mediterranean charm and vibrant markets.</p>
+      </div>
+    </div>
+
+    <!-- Day 7 -->
+    <div class="day-card">
+      <img class="day-image" src="https://www.thetrainline.com/cms/media/1368/france-mont-saint-michel.jpg?mode=crop&width=1080&height=1080&quality=70" alt="Mont Saint-Michel" />
+      <div class="day-content">
+        <h2>Day 7: Mont Saint-Michel</h2>
+        <p>Visit the iconic Mont Saint-Michel, a medieval abbey perched on a rocky island. Enjoy the scenic views and charming village streets.</p>
+      </div>
+    </div>
+  </div>
+
+
+<div class="info-row">
+  <div class="info-box">🌤 Best Time: April–June, Sep–Oct</div>
+  <div class="info-box">💶 Currency: Euro (€)</div>
+  <div class="info-box">🗣 Language: French</div>
+  <div class="info-box">🚆 Transport: Metro & TGV</div>
+</div>
+
+  <footer>
+    <p>© 2025 Explore France Travel Guide</p>
+  </footer>
+
+</body>
+</html>

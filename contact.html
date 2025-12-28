@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – Travel Website</title>
+    <link rel="icon" href="image1.png" type="image/png">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f9f9f9;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #ffffff;
+      padding: 15px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      position: sticky;
+      top: 0;
+    }
+
+    .navbar a {
+      padding: 10px 20px;
+      background: #eee;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      background: #ffb74d;
+      color: #fff;
+    }
+
+    /* Contact Header */
+    header {
+      background: url('https://images.pexels.com/photos/3408353/pexels-photo-3408353.jpeg') center/cover no-repeat;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      text-shadow: 0 0 20px rgba(0,0,0,0.6);
+    }
+
+    /* Contact Form Section */
+    .contact-section {
+      background: #fff;
+      padding: 60px 20px;
+      text-align: center;
+      width: 85%;
+      margin: 40px auto;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .contact-section h2 {
+      font-size: 2.3rem;
+      margin-bottom: 10px;
+      color: #c0392b;
+    }
+
+    .contact-section p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 12px;
+      border-radius: 10px;
+      border: 2px solid #ddd;
+      font-size: 1rem;
+      font-family: inherit;
+      transition: 0.3s;
+      width: 100%;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #c0392b;
+    }
+
+    .contact-form button {
+      padding: 12px;
+      background: #c0392b;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .contact-form button:hover {
+      background: #a93226;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="india.html">India</a>
+    <a href="switzerland.html">Switzerland</a>
+    <a href="dubai.html">Dubai</a>
+    <a href="abudhabi.html">Abu Dhabi</a>
+    <a href="america.html">America</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+
+  <!-- Contact Form Section -->
+  <div class="contact-section">
+    <h2>Plan Your Trip With Us</h2>
+    <p>Have questions or want a personalised travel itinerary? Send us a message!</p>
+
+    <form class="contact-form" action="thankyou.html" method="get">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="text" placeholder="Where do you want to travel?" required />
+      <textarea rows="5" placeholder="Your message..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+</body>
+</html>

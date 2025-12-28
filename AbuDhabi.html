@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>7-Day Abu Dhabi Trip Plan</title>
+<link rel="icon" href="image1.png" type="image/png">
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Poppins:wght@300;600;800&display=swap');
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0a0a0a, #3b2f19);
+    color: white;
+  }
+
+  header {
+    text-align: center;
+    padding: 50px 20px;
+    animation: dropDown 1.2s ease forwards;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+}
+
+.navbar a {
+    padding: 10px 20px;
+    background: #eee;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background: #ffb74d;
+    color: #fff;
+}
+
+  @keyframes dropDown {
+    from { opacity: 0; transform: translateY(-40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #ffd700, #ffcf33, #fff6b7);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  header p {
+    font-size: 1.2rem;
+    opacity: 0.85;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 30px;
+  }
+
+  .day-card {
+    background: rgba(255, 215, 0, 0.08);
+    border: 1px solid rgba(255, 215, 0, 0.25);
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.2);
+    transform: translateY(50px);
+    opacity: 0;
+    animation: slideUp 1s forwards;
+    transition: transform .35s ease, box-shadow .35s ease;
+  }
+
+  .day-card:nth-child(odd) { animation-delay: .2s; }
+  .day-card:nth-child(even) { animation-delay: .4s; }
+
+  @keyframes slideUp {
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  .day-card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 35px rgba(255, 215, 0, 0.5);
+  }
+
+  /* Golden shine hover effect */
+  .day-card::after {
+    content: "";
+    position: absolute;
+    top: -150%;
+    left: -150%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.15), transparent);
+    transform: rotate(45deg);
+    transition: .9s;
+  }
+
+  .day-card:hover::after {
+    top: 150%;
+    left: 150%;
+  }
+
+  .day-image {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    transition: 0.4s ease;
+    filter: brightness(0.85);
+  }
+
+  .day-card:hover .day-image {
+    transform: scale(1.08);
+    filter: brightness(1);
+  }
+
+  .day-content {
+    padding: 20px;
+  }
+
+  .day-content h2 {
+    font-size: 1.7rem;
+    margin: 0 0 10px;
+    background: linear-gradient(90deg, #ffd700, #fff6b7);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .day-content p {
+    line-height: 1.6;
+    opacity: 0.9;
+  }
+
+  footer {
+    text-align: center;
+    padding: 40px 0;
+    opacity: 0.7;
+  }
+  .info-row {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin: 20px auto 40px;
+  flex-wrap: wrap;
+}
+
+.info-box {
+  background: rgba(255, 215, 0, 0.15);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  padding: 12px 22px;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 12px rgba(255,215,0,0.25);
+}
+</style>
+</head>
+
+<body>
+    <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="india.html">India</a>
+    <a href="switzerland.html">Switzerland</a>
+    <a href="dubai.html">Dubai</a>
+    <a href="abudhabi.html">Abu Dhabi</a>
+     <a href="america.html">America</a>
+</div>
+
+<header>
+  <h1>7-Day Abu Dhabi Trip Plan</h1>
+  <p>Experience luxury, adventure, and Arabian beauty</p>
+</header>
+
+<div class="container">
+
+  <!-- Day 1 -->
+  <div class="day-card">
+    <img class="day-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvkV3tXYt7c-woNuGA3E1xrNOMS4syxd36pw&s">
+    <div class="day-content">
+      <h2>Day 1: Sheikh Zayed Grand Mosque</h2>
+      <p>Arrive in Abu Dhabi and visit the breathtaking white-marble mosque — one of the world’s most beautiful architectural wonders.</p>
+    </div>
+  </div>
+
+  <!-- Day 2 -->
+  <div class="day-card">
+    <img class="day-image" src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/489000/489049-louvre-abu-dhabi.jpg?impolicy=fcrop&w=450&h=280&q=medium">
+    <div class="day-content">
+      <h2>Day 2: Louvre Abu Dhabi</h2>
+      <p>Explore the iconic floating dome museum with artistic masterpieces and unique Arabian-modern architecture.</p>
+    </div>
+  </div>
+
+  <!-- Day 3 -->
+  <div class="day-card">
+    <img class="day-image" src="https://benoycdn.azureedge.net/files/projects/ferrari-world-abu-dhabi/_mediumImage/victor-malyushev-CEjN-o4ugFA-unsplash.jpg">
+    <div class="day-content">
+      <h2>Day 3: Ferrari World & Yas Island</h2>
+      <p>Enjoy thrilling rides, Formula Rossa roller coaster, Yas Mall, and Yas Marina Circuit.</p>
+    </div>
+  </div>
+
+  <!-- Day 4 -->
+  <div class="day-card">
+    <img class="day-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWQC6hxV4J90kQj3uGrHVSzo7Y-G0GDJO1MQ&s">
+    <div class="day-content">
+      <h2>Day 4: Desert Safari</h2>
+      <p>Dune bashing, camel rides, sandboarding, belly dance night show, and BBQ dinner under the stars.</p>
+    </div>
+  </div>
+
+  <!-- Day 5 -->
+  <div class="day-card">
+    <img class="day-image" src="https://www.kayak.co.in/rimg/himg/2e/e5/e1/leonardo-2107472-Emirates_Palace_-_Dusk_(hero_shot)_O-949272.jpg?width=836&height=607&crop=true">
+    <div class="day-content">
+      <h2>Day 5: Emirates Palace</h2>
+      <p>Visit the luxurious palace hotel, enjoy gold cappuccino, and explore Corniche Beach nearby.</p>
+    </div>
+  </div>
+
+  <!-- Day 6 -->
+  <div class="day-card">
+    <img class="day-image" src="https://static.myconnect.ae/-/media/yasconnect/project/ppad/plan-your-visit/cultural-things/teaser.jpg">
+    <div class="day-content">
+      <h2>Day 6: Qasr Al Watan</h2>
+      <p>Tour the presidential palace — a masterpiece of Arabian architecture and glowing chandeliers.</p>
+    </div>
+  </div>
+
+  <!-- Day 7 -->
+  <div class="day-card">
+    <img class="day-image" src="https://desertleapsafari.com/wp-content/uploads/2024/07/Saadiyat-Island-Abu-Dhabis.webp">
+    <div class="day-content">
+      <h2>Day 7: Saadiyat Island & Beaches</h2>
+      <p>Relax on Saadiyat’s stunning turquoise beaches and enjoy a calm luxury-filled day.</p>
+    </div>
+  </div>
+
+</div>
+<!-- Travel Info Row -->
+<div class="info-row">
+  <div class="info-box">🌤 Best Time: October–April</div>
+  <div class="info-box">💵 Currency: UAE Dirham (AED)</div>
+  <div class="info-box">🗣 Language: Arabic</div>
+  <div class="info-box">🚕 Transport: Taxis, Buses, Yas Shuttle</div>
+</div>
+
+<footer>
+  <p>© 2025 Abu Dhabi Luxury Travel Guide</p>
+</footer>
+
+</body>
+</html>

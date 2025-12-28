@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>7-Day USA Trip Plan</title>
+<link rel="icon" href="image1.png" type="image/png">
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #001f3f, #ff416c, #ff4b2b);
+    background-size: 300% 300%;
+    animation: gradientMove 10s ease infinite;
+    color: white;
+  }
+
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  header {
+    text-align: center;
+    padding: 50px 20px;
+    animation: fadeDown 1s ease forwards;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+}
+
+.navbar a {
+    padding: 10px 20px;
+    background: #eee;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background: #ffb74d;
+    color: #fff;
+}
+
+  @keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 0 0 20px rgba(255,255,255,0.4);
+  }
+
+  header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 35px;
+  }
+
+  .day-card {
+    background: rgba(255,255,255,0.15);
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    padding: 0;
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    overflow: hidden;
+    transform: translateY(40px);
+    opacity: 0;
+    animation: floatUp 1s forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s;
+  }
+
+  .day-card:nth-child(odd) { animation-delay: .2s; }
+  .day-card:nth-child(even) { animation-delay: .4s; }
+
+  @keyframes floatUp {
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  .day-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 35px rgba(255,255,255,0.7);
+  }
+
+  .day-image {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    filter: brightness(0.85);
+    transition: 0.4s;
+  }
+
+  .day-card:hover .day-image {
+    filter: brightness(1);
+    transform: scale(1.08);
+  }
+
+  .day-content {
+    padding: 20px;
+  }
+
+  .day-content h2 {
+    margin: 0 0 10px;
+    font-size: 1.6rem;
+    text-shadow: 0 0 10px rgba(255,255,255,0.6);
+  }
+
+  .day-content p {
+    margin: 0;
+    opacity: 0.9;
+    line-height: 1.6;
+  }
+
+  footer {
+    text-align: center;
+    margin: 50px 0 20px;
+    opacity: 0.7;
+  }
+  .info-row {
+  display: flex;
+  gap: 15px;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info-box {
+  background: rgba(255,255,255,0.2);
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 10px rgba(255,255,255,0.3);
+  color: white;
+}
+</style>
+</head>
+
+<body>
+    <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="india.html">India</a>
+    <a href="switzerland.html">Switzerland</a>
+    <a href="dubai.html">Dubai</a>
+    <a href="abudhabi.html">Abu Dhabi</a>
+     <a href="america.html">America</a>
+</div>
+
+
+<header>
+  <h1>7-Day USA Trip Plan</h1>
+  <p>An unforgettable journey across America’s most iconic destinations</p>
+</header>
+
+<div class="container">
+
+  <!-- Day 1 -->
+  <div class="day-card">
+    <img class="day-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzqhT7fGxsM0nv2S0c-LTYtLoqsoUIz24cUfY2gcXAfpGT6YAxXv5CqkQpA4kBLBMKY_4&usqp=CAU" />
+    <div class="day-content">
+      <h2>Day 1: New York City – Times Square & Central Park</h2>
+      <p>Arrive in NYC, explore Times Square’s neon lights and enjoy a peaceful evening walk at Central Park.</p>
+    </div>
+  </div>
+
+  <!-- Day 2 -->
+  <div class="day-card">
+    <img class="day-image" src="https://media.tacdn.com/media/attractions-splice-spp-674x446/13/c8/db/13.jpg" />
+    <div class="day-content">
+      <h2>Day 2: Statue of Liberty & Manhattan Skyline Cruise</h2>
+      <p>Visit Liberty Island and enjoy breathtaking skyline views from a sunset cruise around Manhattan.</p>
+    </div>
+  </div>
+
+  <!-- Day 3 -->
+  <div class="day-card">
+    <img class="day-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNcgIv7i6T9NVZV_eCFfhcqQeR0oK9PW3mYA&s" />
+    <div class="day-content">
+      <h2>Day 3: Washington D.C. – White House & Museums</h2>
+      <p>Travel to D.C. and explore the White House, Lincoln Memorial, and Smithsonian museums.</p>
+    </div>
+  </div>
+
+  <!-- Day 4 -->
+  <div class="day-card">
+    <img class="day-image" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/01/00/2b/the-strip.jpg?w=900&h=500&s=1" />
+    <div class="day-content">
+      <h2>Day 4: Las Vegas – The Strip & Night Shows</h2>
+      <p>Fly to Las Vegas, enjoy casinos, musical fountains, neon-lit streets, and world-class shows.</p>
+    </div>
+  </div>
+
+  <!-- Day 5 -->
+  <div class="day-card">
+    <img class="day-image" src="https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_2,w_3840,h_1920,g_auto/dpr_auto/f_auto/q_auto:eco/v1/gettyimages-858637934?_a=BAVAZGID0" />
+    <div class="day-content">
+      <h2>Day 5: Grand Canyon</h2>
+      <p>Take a day tour to the Grand Canyon and witness one of the most breathtaking natural wonders of the world.</p>
+    </div>
+  </div>
+
+  <!-- Day 6 -->
+  <div class="day-card">
+    <img class="day-image" src="https://media.tacdn.com/media/attractions-splice-spp-674x446/12/70/d5/42.jpg" />
+    <div class="day-content">
+      <h2>Day 6: Los Angeles – Hollywood & Santa Monica</h2>
+      <p>Visit the Hollywood Sign, Walk of Fame, and enjoy sunset at Santa Monica Beach.</p>
+    </div>
+  </div>
+
+  <!-- Day 7 -->
+  <div class="day-card">
+    <img class="day-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAzbR_t1ASYncUpQS4RNq01Rl0oMCzLNkHHw&s" />
+    <div class="day-content">
+      <h2>Day 7: San Francisco – Golden Gate Bridge</h2>
+      <p>Finish your trip by exploring San Francisco’s Golden Gate Bridge, cable cars, and Fisherman’s Wharf.</p>
+    </div>
+  </div>
+
+</div>
+<!-- Travel Info Row -->
+<div class="info-row">
+  <div class="info-box">🌤 Best Time: April–October</div>
+  <div class="info-box">💵 Currency: US Dollar ($)</div>
+  <div class="info-box">🗣 Language: English</div>
+  <div class="info-box">🚆 Transport: Metro, Subway, Buses</div>
+</div>
+
+<footer>
+  <p>© 2025 USA Travel Guide</p>
+</footer>
+
+</body>
+</html>

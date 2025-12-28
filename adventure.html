@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adventure Spots – Roam Aura</title>
+    <link rel="stylesheet" href="add.css">
+    <link rel="icon" href="image1.png" type="image/png">
+
+    <style>
+
+        /* PAGE THEME */
+        body {
+            background: #f4fff6;   /* very light green */
+            font-family: Arial, sans-serif;
+        }
+
+        /* MAP SECTION */
+        .map-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .map-section img {
+            width: 100%;
+            
+            border-radius: 15px;
+            border: 3px solid #91d18b;
+        }
+
+        .map-section h2 {
+            font-size: 2.4em;
+            color: #2b8a3e;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        /* GRID */
+        .adventure-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .adventure-card {
+            background: white;
+            border-radius: 12px;
+            padding: 10px;
+            text-align: center;
+            border: 2px solid #bfeccb;
+            transition: 0.3s;
+        }
+
+        .adventure-card:hover {
+            transform: scale(1.03);
+            border-color: #76c893;
+        }
+
+        .adventure-card img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .adventure-card h4 {
+            margin: 10px 0 4px;
+            color: #145a32;
+            font-size: 1.1em;
+        }
+
+        .adventure-card p {
+            margin: 0;
+            color: #2d6a4f;
+            font-size: 0.9em;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header class="main-header">
+  <div class="logo">ROAM AURA</div>
+  
+  <nav class="nav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+
+<!-- 🌍 PASTEL GREEN WORLD MAP -->
+<section class="map-section">
+    <h2>Adventure Spots Around The World</h2>
+    <img src="https://media.istockphoto.com/id/2050188276/vector/travel-and-adventure-quotes-calligraphy-lettering-collection-of-written-phrases-slogans.jpg?s=612x612&w=0&k=20&c=teN_SwODNzj8gPkiChtXbyBdtTLpYld7gaji6gEuG_c=" alt="World Map">
+</section>
+
+
+<!-- ⭐ ADVENTURE GRID (24 SPOTS) -->
+<section class="adventure-grid">
+
+    <div class="adventure-card"><img src="https://images.pexels.com/photos/27917457/pexels-photo-27917457.jpeg"><h4>Skydiving – Dubai</h4><p>Ultimate free fall</p></div>
+    <div class="adventure-card"><img src="https://1.bp.blogspot.com/-chPoDlxsQUE/TnfZaQMKl4I/AAAAAAAAIHg/BKq8YkYQJ-k/s1600/P1010962.png"><h4>Paragliding – Switzerland</h4><p>Alps sky view</p></div>
+    <div class="adventure-card"><img src="https://d1bv4heaa2n05k.cloudfront.net/user-images/1554457610551/shutterstock-70095013_main_1554457648633.jpeg"><h4>Scuba – Maldives</h4><p>Coral reef beauty</p></div>
+    <div class="adventure-card"><img src="data:image/jpeg;base64,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"><h4>Surfing – Bali</h4><p>Tropical waves fun</p></div>
+    <div class="adventure-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxFjbSVKfh_3rIJ7x9sIyjHsVB7zHFxvISGg&s"><h4>Safari – Kenya</h4><p>Wildlife close-up</p></div>
+    <div class="adventure-card"><img src="https://media.bookmundi.com/tour/7-days-most-popular-of-turkey-509543-1579435157.jpg?format=auto&quality=60&width=768"><h4>Hot Air Balloon – Turkey</h4><p>Dreamy sunrise ride</p></div>
+    <div class="adventure-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9LXiHKttyoB4KRNy-9MZXBpb-lPm9hU7J3w&s"><h4>Snow Ski – Canada</h4><p>White snow slopes</p></div>
+    <div class="adventure-card"><img src="https://api.swotahtravel.com/images/blogs/cover/trekking-in-Nepal.jpg"><h4>Mountain Trek – Nepal</h4><p>Himalayan adventure</p></div>
+    <div class="adventure-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcM2RyC6FMwEP6FdhbyytclR7nufZlPonLbw&s"><h4>Desert Safari – Abu Dhabi</h4><p>Dune bashing thrill</p></div>
+    <div class="adventure-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkzH82SR1pfhzCfdIGwMRYv13gDoSvA69KBw&s"><h4>Zipline – Costa Rica</h4><p>Rainforest glide</p></div>
+
+    <div class="adventure-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8cmBKJkyfLrIaVFXJ3gaTN1hjfV-1fyA5ww&s"><h4>Kayaking – Norway</h4><p>Fjord calm water</p></div>
+    <div class="adventure-card"><img src="https://www.motorhomeiceland.com/assets/img/blog/katla-ice-cave.webp"><h4>Ice Cave – Iceland</h4><p>Frozen blue beauty</p></div>
+    <div class="adventure-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL7DtEdsGE_XiFJsRFnfRokqGqlqyNJpc4Cw&s"><h4>Cliff Jump – Hawaii</h4><p>Ocean jump fun</p></div>
+    <div class="adventure-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpEgL5asiM1O0qL7KAxqmqkt5vX7ZzxwHXrQ&s"><h4>Jungle Walk – Amazon</h4><p>Deep forest trek</p></div>
+    <div class="adventure-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRESKvD0CCHiLSQW8D33xFwoYfqw-NfSys7rQ&s"><h4>Sailing – Greece</h4><p>Blue sea breeze</p></div>
+
+    <div class="adventure-card"><img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0f/ff/dc/fb.jpg"><h4>ATV Ride – Qatar</h4><p>Desert speed ride</p></div>
+    <div class="adventure-card"><img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/74/c6/3e.jpg"><h4>Waterfall Rappel – Brazil</h4><p>Fall adventure drop</p></div>
+    <div class="adventure-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-qnNLy5K2rgQZyOH8LbGTh92733Q1uXVR8A&s"><h4>Snorkeling – Thailand</h4><p>Colorful marine view</p></div>
+    <div class="adventure-card"><img src="https://vid.alarabiya.net/images/2017/02/02/80462ac5-9d01-42dc-a23e-a0116d9e3557/80462ac5-9d01-42dc-a23e-a0116d9e3557_16x9_1200x676.jpg?width=555&format=jpg"><h4>Sandboarding – Dubai</h4><p>Slide desert dunes</p></div>
+    <div class="adventure-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkcl3jjG7mFGumn8y21tX4uB6Sr1KEyz1j0w&s"><h4>Horse Riding – Mongolia</h4><p>Wide open plains</p></div>
+
+    <div class="adventure-card"><img src="https://www.hindustantimes.com/ht-img/img/2023/05/06/1600x900/rishikesh_1659426381465_1683347398762_1683347464043.jpg"><h4>River Rafting – India</h4><p>Fast river rush</p></div>
+    <div class="adventure-card"><img src="https://i.cdn.newsbytesapp.com/images/l41320250307140730.jpeg"><h4>Volcano Hike – Indonesia</h4><p>Fire mountain trek</p></div>
+    <div class="adventure-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHY01dpBpu5p1gyKXml7JeSEOtNceEw26MMA&s"><h4>Glacier Walk – Alaska</h4><p>Snow ice ridge</p></div>
+    <div class="adventure-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD45guAQ_rlUfupzcAktS_r1UxwEn9LtYk-g&s"><h4>Camping – New Zealand</h4><p>Nature night stay</p></div>
+
+</section>
+
+<footer style="text-align:center;padding:20px;">
+    © 2025 Roam Aura
+</footer>
+
+</body>
+</html>
